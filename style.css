@@ -69,7 +69,6 @@ input[type=number] {
 .burgundyBorder {
     color: rgb(192, 23, 180);
     border-color: rgb(192, 23, 180);
-
 }
 
 #mid-wrapper {
@@ -250,4 +249,59 @@ input[type=number] {
 #message-button {
     display: flex;
     flex-direction: column;
+}
+
+/* ============================
+   MOBILE RESPONSIVE FIX 100%
+   ============================ */
+@media (max-width: 600px) {
+
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    #header,
+    #mid-wrapper,
+    #bottom-wrapper,
+    #counterWrapper {
+        max-width: 100% !important;
+        width: 100%;
+    }
+
+    #last-counters p {
+        font-size: 13px;
+        padding: 2px 8px;
+        margin: 0 3px;
+    }
+
+    #balance-amount {
+        width: 70px;
+        height: 28px;
+        font-size: 14px;
+    }
+
+    #canvas {
+        width: 100% !important;
+        height: 200px !important;
+    }
+
+    #counter {
+        left: 50% !important;
+        transform: translateX(-50%);
+        font-size: 32px;
+        top: 12%;
+    }
+
+    #bottom-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #bet-button {
+        width: 100%;
+        margin-left: 0;
+        padding: 12px;
+        font-size: 16px;
+    }
 }
